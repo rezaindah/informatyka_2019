@@ -1,0 +1,21 @@
+numb = []
+
+new_numb = 0
+
+# Start a loop that will run until the user enters 'quit'.
+while new_numb != 'q':
+    # Ask the user for a name.
+    new_numb = raw_input("Input number or press 'q' to quit: ")
+
+    # Add the new name to our list.
+    if new_numb != 'q':
+        numb.append(int(new_numb))
+
+# Show that the name has been added to the list.
+print(numb)
+aver= sum(numb) / float(len(numb))
+print("Average is : %f" % aver)
+result=1
+for x in numb:
+    result *= x
+print("Product is : %f" %result)
